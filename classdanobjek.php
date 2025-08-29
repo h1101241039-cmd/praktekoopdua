@@ -15,7 +15,10 @@ class Mahasiswa {
     }
 }
 
-Buat Object
+
+
+
+
 <?php
 $mhs1 = new Mahasiswa("Budi Santoso", "220101001", "Sistem Informasi");
 $mhs2 = new Mahasiswa("Ani Lestari", "220101002", "Teknik Informatika");
