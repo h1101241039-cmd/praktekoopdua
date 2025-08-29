@@ -1,11 +1,26 @@
 <?php
-class persegipanjang {
-    // Property
-    public $panjang;
-    public $lebar;
+class Mahasiswa {
+    public $nama;
+    public $nim;
+    public $jurusan;
 
-    // Method
-    public function jalan() {
-        return "Mobil $this->merk berwarna $this->warna sedang berjalan...";
+    public function __construct($nama, $nim, $jurusan) {
+        $this->nama = $nama;
+        $this->nim = $nim;
+        $this->jurusan = $jurusan;
+    }
+
+    public function tampilData() {
+        return "Nama: $this->nama, NIM: $this->nim, Jurusan: $this->jurusan";
     }
 }
+
+Buat Object
+<?php
+$mhs1 = new Mahasiswa("Budi Santoso", "220101001", "Sistem Informasi");
+$mhs2 = new Mahasiswa("Ani Lestari", "220101002", "Teknik Informatika");
+
+echo $mhs1->tampilData();
+echo "<br>";
+echo $mhs2->tampilData();
+
